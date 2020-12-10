@@ -1,0 +1,1 @@
+export const FETCH_COVID = 'FETCH_COVID'
