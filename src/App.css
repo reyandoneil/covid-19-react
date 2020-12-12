@@ -1,3 +1,94 @@
 .home{
   display:flex;
+  flex-direction: column;
+  align-items: space-evenly;
+  justify-content: center;
+  align-items: center;
+}
+.NewConfirmed{
+  margin: 20px;
+  flex-wrap: wrap;
+  width: 240px;
+  height: 192px;
+  border-radius: 9px;
+  box-shadow: 9px 14px 19px 1px rgba(0,0,0,0.27);
+}
+
+.NewConfirmed-info {
+  background-color: white;
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+  padding: 19px;
+  height: 90%;
+}
+h5,h6{
+  padding: 0%;
+  color: #6E6E6E;
+}
+.NewConfirmed-btm{
+  background-color: #FFC881;
+  height: 10%;
+  border-bottom-left-radius: 9px;
+  border-bottom-right-radius: 9px;
+}
+.NewConfirmed-btm2{
+  background-color: #81A3FF;
+  height: 10%;
+  border-bottom-left-radius: 9px;
+  border-bottom-right-radius: 9px;
+}
+.NewConfirmed-btm3{
+  background-color: #FF8181;
+  height: 10%;
+  border-bottom-left-radius: 9px;
+  border-bottom-right-radius: 9px;
+}
+
+.Card{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.CardTitle{
+  font-size: 16px;
+  color: #6E6E6E;
+}
+
+.spiner{
+margin-top: 240px;
+}
+
+.card-newNumber{
+ font-size: 12px;
+}
+
+.date{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  width: 240px;
+  box-shadow: 9px 14px 19px 1px rgba(0,0,0,0.27);
+  border-radius: 9px;
+  background-color: #81A3FF;
+  color: white;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+}
+body{
+  background-color: #F3F3F3;
+}
+.countUp{
+  /* font-size: 18px; */
+}
+.Chart{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* height: 80%; */
+  width: 90%;
+  padding: 50px;
+  /* background-color: white; */
 }

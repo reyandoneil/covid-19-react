@@ -1,1 +1,4 @@
 export const FETCH_COVID = 'FETCH_COVID'
+export const FETCH_COVID_DAILY = 'FETCH_COVID_DAILY'
+export const FETCH_COUNTRIES = 'FETCH_COUNTRIES'
+
