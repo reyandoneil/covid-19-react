@@ -6,8 +6,8 @@ const accessToken = '5cf9dfd5-3449-485e-b5ae-70a60e997864'
 // const curentDate = new Date()
 
 export const fetchCovid = () => {
-    return async (dispatch) => {
-        await axios
+    return (dispatch) => {
+        axios
             .get(`${baseUrl}summary`, {
                 headers: {
                     'X-Access-Token': accessToken
@@ -23,17 +23,17 @@ export const fetchCovid = () => {
     }
 }
 
-export const fetchCounties = () => {
+export const fetchCountry = () => {
     return (dispatch) => {
         axios
-        .get(`${baseUrl}countries`, {
-            headers: {
-                'X-Access-Token': accessToken
-            }
-        })
-        .then(({ data }) => {
-            // console.log(data, 'action');
-            dispatch({ type: "FETCH_COUNTRIES", payload: data })
+            .get(`${baseUrl}countries`, {
+                headers: {
+                    'X-Access-Token': accessToken
+                }
+            })
+            .then(({ data }) => {
+                console.log(data, 'action');
+                dispatch({ type: "FETCH_COUNTRIES", payload: data })
             })
             .catch(err => {
                 console.log(err);
@@ -42,7 +42,7 @@ export const fetchCounties = () => {
 }
 
 export const fetchDailyCovid = (country) => {
-    return (dispatch) => {
+    return async (dispatch) => {
         axios
             .get(`https://api.covid19api.com/premium/country/${country}`, {
                 headers: {

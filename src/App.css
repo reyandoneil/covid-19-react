@@ -56,17 +56,22 @@ h5,h6{
 
 .spiner{
 margin-top: 240px;
+margin-bottom: 100px 
 }
 
 .card-newNumber{
  font-size: 12px;
 }
 
+.search{
+  margin-top: 50px;
+}
+
 .date{
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 30px;
+  height: 45px;
   width: 240px;
   box-shadow: 9px 14px 19px 1px rgba(0,0,0,0.27);
   border-radius: 9px;
@@ -88,7 +93,9 @@ body{
   align-items: center;
   justify-content: center;
   /* height: 80%; */
-  width: 90%;
-  padding: 50px;
+  width: 80%;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 50px;
   /* background-color: white; */
 }

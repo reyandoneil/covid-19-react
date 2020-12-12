@@ -9,7 +9,6 @@ function InfoCard({ data }) {
             <div className='NewConfirmed'>
                 <div className='NewConfirmed-info'>
                     <div className='CardTitle'>Global Invected</div>
-                    {/* <h2>{data.Global.TotalConfirmed.toLocaleString()}</h2> */}
                     <h2>
                         <CountUp
                             start={0}

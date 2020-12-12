@@ -1,12 +1,12 @@
 import { Line, Bar } from 'react-chartjs-2';
 
 function Chart(covid) {
-    const data = covid.data
+    const data = covid.covid
     // console.log(data, 'Charts');
     const lineChart = (
         <Line
             data={{
-                labels: data.map((data) => new Date (data.Date).toLocaleDateString()),
+                labels: data.map((data) => new Date(data.Date).toLocaleDateString()),
                 datasets: [{
                     data: data.map((data) => data.NewCases),
                     label: 'Infected',
