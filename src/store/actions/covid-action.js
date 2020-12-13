@@ -32,7 +32,7 @@ export const fetchCountry = () => {
                 }
             })
             .then(({ data }) => {
-                console.log(data, 'action');
+                // console.log(data, 'action');
                 dispatch({ type: "FETCH_COUNTRIES", payload: data })
             })
             .catch(err => {
@@ -54,7 +54,7 @@ export const fetchDailyCovid = (country) => {
                 dispatch({ type: "FETCH_COVID_DAILY", payload: data })
             })
             .catch(err => {
-                console.log(err);
+                return err
             })
 
     }

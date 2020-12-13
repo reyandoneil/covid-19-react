@@ -6,6 +6,7 @@ import { useDispatch } from 'react-redux'
 function SearchCountry(dataCountry) {
     const dispatch = useDispatch()
     const { data } = dataCountry
+
     const handleChange = (e) => {
         dispatch(fetchDailyCovid(e.target.value));
     }
@@ -18,7 +19,7 @@ function SearchCountry(dataCountry) {
                         <Form.Label></Form.Label>
                         <Form.Control as="select" custom onChange={(e) => handleChange(e)}>
                             {data.map((country, i) => {
-                                return <option>{country.Country}</option>
+                                return <option key={i}>{country.Country}</option>
                             })}
                         </Form.Control>
                     </Form.Group>

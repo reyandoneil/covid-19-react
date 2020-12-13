@@ -31,11 +31,11 @@ function Home() {
     }, [])
 
     useEffect(() => {
-        dispatch(fetchDailyCovid())
+        dispatch(fetchDailyCovid('bouvet island'))
         setDataDaily(dataDailyCovid)
     }, [])
 
-    console.log(dataCountry, '<---home');
+    // console.log(dataDailyCovid, '<---home');
     return (
         <div className='home'>
             <img src={Logo} width={'300px'} />
@@ -48,10 +48,12 @@ function Home() {
                 :
                 <Search data={dataCountry} />
             )}
-            {(loadingDailyCovid ? <div className='spiner'>Select Country</div>
+            {/* {(loadingDailyCovid ? <div className='spiner'>Select Country</div>
                 :
-                <Chart covid={dataDailyCovid} />
-            )}
+                <Chart daily={dataDailyCovid} global={dataCovid} />
+            )} */}
+            <Chart daily={dataDailyCovid} global={dataCovid} />
+
 
         </div>
     );

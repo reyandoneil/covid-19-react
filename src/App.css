@@ -65,6 +65,7 @@ margin-bottom: 100px
 
 .search{
   margin-top: 50px;
+  
 }
 
 .date{
@@ -93,9 +94,9 @@ body{
   align-items: center;
   justify-content: center;
   /* height: 80%; */
-  width: 80%;
-  padding-left: 50px;
+  width: 80vw;
+  /* padding-left: 50px;
   padding-right: 50px;
-  padding-bottom: 50px;
+  padding-bottom: 50px; */
   /* background-color: white; */
 }
